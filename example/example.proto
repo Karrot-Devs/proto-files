@@ -3,10 +3,9 @@
 syntax = "proto3";
 
 package example;
-import "google/protobuf/empty.proto";
 
 service ExampleService {
-  rpc GetExample (google.protobuf.Empty) returns (Example) {}
+  rpc GetExample (GetExampleParams) returns (Example) {}
 }
 
 message GetExampleParams {
